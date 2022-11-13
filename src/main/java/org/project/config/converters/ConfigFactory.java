@@ -1,7 +1,7 @@
-package org.vish.config.converters;
+package org.project.config.converters;
 
 import org.aeonbits.owner.ConfigCache;
-import org.vish.config.FrameworkConfig;
+import org.project.config.FrameworkConfig;
 
 public final class ConfigFactory {
 
