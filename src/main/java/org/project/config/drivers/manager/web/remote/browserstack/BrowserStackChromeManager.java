@@ -10,7 +10,6 @@ public final class BrowserStackChromeManager {
     private BrowserStackChromeManager() {
 
     }
-
     public static WebDriver geDriver() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName","chrome");
