@@ -11,7 +11,7 @@ public class DemoTest {
     public void Test1(){
 
         WebDriver driver = LocalDriverFactory.getDriver(BrowserType.CHROME);
-        driver.get("https://www.google.com");
+        driver.get("https://www.amazon.in");
         System.out.println(driver.getTitle());
         driver.quit();
 

@@ -3,7 +3,7 @@ package org.project.config.drivers.manager.web.remote.browserstack;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.project.config.converters.ConfigFactory;
+import org.project.config.configfactory.ConfigFactory;
 
 public final class BrowserStackFirefoxManager {
 

@@ -1,4 +1,4 @@
-package org.project.config;
+package org.project.config.configfactory;
 
 import org.aeonbits.owner.Config;
 import org.project.config.converters.BrowserTypeConverter;
@@ -17,17 +17,24 @@ import java.net.URL;
 
 public interface FrameworkConfig extends Config {
 
-    @DefaultValue("CHROME")
+    @DefaultValue("chrome")
     @ConverterClass(BrowserTypeConverter.class)
     BrowserType browser();
     @Key("runMode")
     RunModes runMode();
     @Key("remoteToolType")
-    RemoteTools remoteToolType();
+    RemoteTools browserRemoteToolType();
+    @Key("mobileRunMode")
+    RunModes mobileRunMode();
+    @Key("mobileRemoteMode")
+    BrowserType mobileRemoteMode();
     @ConverterClass(StringToURLConverter.class)
     URL seleniumGridURL();
     @ConverterClass(StringToURLConverter.class)
     URL selenoidGridURL();
     @ConverterClass(StringToURLConverter.class)
     URL browserStackURL();
+    @ConverterClass(StringToURLConverter.class)
+    @DefaultValue("http://127.0.0.1:4425/wd/hub")
+    URL localAppiumServerURL();
 }
