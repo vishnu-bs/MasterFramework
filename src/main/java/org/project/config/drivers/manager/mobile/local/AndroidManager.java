@@ -7,7 +7,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.project.config.configfactory.ConfigFactory;
 
-import java.net.URL;
 
 public final class AndroidManager {
 
